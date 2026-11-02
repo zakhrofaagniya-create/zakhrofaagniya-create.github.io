@@ -1,17 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REPOSITORY UTAMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Zakhrofa Agniyaa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: #183b56;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #102a43;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .profile {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #183b56;
+        }
+
+        .profile h2 {
+            margin-top: 15px;
+            color: #183b56;
+        }
+
+        .biodata {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .biodata h2 {
+            color: #183b56;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .biodata table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .biodata td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .biodata td:first-child {
+            font-weight: bold;
+            width: 35%;
+        }
+
+        .repository {
+            text-align: center;
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .repository a {
+            display: inline-block;
+            background: #183b56;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .repository a:hover {
+            background: #102a43;
+        }
+
+        footer {
+            background: #183b56;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Repository Utama</h1>
-  <p>Ini adalah halaman untuk Repository Utama </p>
-  <p>Zakhrofa Agniyaa<p>
 
-  <br /><a href="https://zakhrofaagniya-create.github.io/praktikum/">Masuk
-Ke Daftar Praktikum</a>
+    <header>
+        <h1>WEBSITE PROFIL PRIBADI</h1>
+        <p>Selamat Datang di Halaman Profil Saya</p>
+    </header>
 
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#repository">Repository Praktikum</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- FOTO PROFIL -->
+        <section class="profile" id="profil">
+            <img src="foto.jpg" alt="Foto Profil">
+
+            <h2>ZAKHROFA AGNIYAA</h2>
+            <p></p>Pelajar</p>
+        </section>
+
+        <!-- BIODATA -->
+        <section class="biodata" id="biodata">
+            <h2>Biodata Diri</h2>
+
+            <table>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>: Zakhrofa Agniyaa</td>
+                </tr>
+
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>: Bekasi,15-05-2010</td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:Perempuan</td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td>
+                    <td>: Desa Banjaran,Blok Ketos Rt04/Rw01.Kab Majalengka,Kec Sumberjaya</td>
+                </tr>
+
+                <tr>
+                    <td>Agama</td>
+                    <td>: Islam</td>
+                </tr>
+
+                <tr>
+                    <td>Nama Sekolah</td>
+                    <td>: SMKN 1 LEUWIMUNDING</td>
+                </tr>
+
+                <tr>
+                    <td>Jurusan 
+                </td>
+                    <td>: Tjkt</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>: zakhrofaagniya@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- LINK REPOSITORY -->
+        <section class="repository" id="repository">
+            <h2>Repository Praktikum</h2>
+
+            <p>
+                Klik tombol di bawah ini untuk melihat
+                repository tugas praktikum saya.
+            </p>
+
+            <a href="https://zakhrofaagniya-create.github.io/praktikum/">
+                Buka Repository Praktikum
+            </a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Website Profil Pribadi</p>
+    </footer>
+
+</body>
 </html>
